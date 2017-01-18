@@ -16,15 +16,16 @@ public class Car implements Serializable {
 
 	public Car() {
 	}
-	
+
 	public Car(Long codigo) {
 		this.codigo = codigo;
 	}
-	
+
 	@Id
 	public Long getCodigo() {
 		return codigo;
 	}
+
 	public void setCodigo(Long codigo) {
 		this.codigo = codigo;
 	}
@@ -32,6 +33,7 @@ public class Car implements Serializable {
 	public String getPlaca() {
 		return placa;
 	}
+
 	public void setPlaca(String placa) {
 		this.placa = placa;
 	}
@@ -39,10 +41,11 @@ public class Car implements Serializable {
 	public Integer getAnoFabricacao() {
 		return anoFabricacao;
 	}
+
 	public void setAnoFabricacao(Integer anoFabricacao) {
 		this.anoFabricacao = anoFabricacao;
 	}
-	
+
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -50,7 +53,7 @@ public class Car implements Serializable {
 		result = prime * result + ((codigo == null) ? 0 : codigo.hashCode());
 		return result;
 	}
-	
+
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
